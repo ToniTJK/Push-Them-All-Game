@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+
+    
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="stylus.css">
+        <title>Hello World</title>
+    
+    <body>
+        <!--<div class="app">-->
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+             <div  class="panel panel-primary">
+                   <div class="panel-heading"><h4 class="panel-title glyphicon glyphicon-info-sign">
+                        <a href="#primerPanell1" data-toggle="collapse" data-parent="#desplegable">Beeps</a></h4>
+                   </div>
+                        <div id="primerPanell1" class="panel-collapse collapse">
+                            <div class="btn-group">
+                            <a href="#" id="botonNegativoBeeps" class="btn-warning btn-sm"> --Beeps  <span class="glyphicon glyphicon-backward"></span></a>
+                            <a href="#" id="botonReproducirBeeps" class="btn-info btn-sm"> Reprodueix Beeps  <span class="glyphicon glyphicon-bullhorn"></a>
+                            <a href="#" id="botonPositivoBeeps" class="btn-warning btn-sm"> ++Beeps  <span class="glyphicon glyphicon-forward"></a> <br>
+                            <br>
+                            <a href="#" id="botonContador" class="btn-danger btn-sm" value="0">Beeps 0</a>
+                            </div> 
+                            
+                        </div>
+            </div>
+        </div>
+        
+  	<!-- ************************************************************ -->
+        
+        <div class="col-xs-12">
+             <div  class="">
+                   <div class="panel-heading bg-success"><h4 class="panel-title glyphicon glyphicon-info-sign">
+                        <a href="#segonPanell1" data-toggle="collapse" data-parent="#desplegable">Orientació</a></h4>
+                   </div>
+                        <div id="segonPanell1" class="panel-collapse collapse in">
+                            <a href="#" id="botonEsquerra" class="btn-warning btn-sm"> esquerra  <span class="	glyphicon glyphicon-chevron-left"></span></a>
+                            <a href="#" id="botonGuardarDireccion" class="btn-info btn-sm"> Guardar Direccio  <span class="glyphicon glyphicon-refresh"></a>
+                            <a href="#" id="botonDreta" class="btn-warning btn-sm"> dreta  <span class="glyphicon glyphicon-chevron-right"></a> <br> <br>
+                            <img id="imgArrow" src="img/arrow.png">
+                        </div>
+            </div>
+        </div> 
+        
+  	<!-- ************************************************************ -->
+        
+        <div class="col-xs-12">
+             <div  class="panel panel-succes">
+                   <div class="panel-heading bg-info"><h4 class="panel-title glyphicon glyphicon-info-sign">
+                        <a href="#tercerPanell1" data-toggle="collapse" data-parent="#desplegable">Push them all</a></h4>
+                   </div>
+                        <div id="tercerPanell1" class="panel-collapse collapse">
+                            <div class="btn-group btn-xs btn-group-justified">
+                            <a href="#" align="center" id="botonStart" class="btn-warning btn-sm btn-block"> Start </a>
+                            <a href="#" align="center" id="botonClean" class="btn-success btn-sm btn-block"> Clean </a> <br>
+                            </div>
+                            
+                            
+                            
+                        </div>
+            </div>
+        </div>
+        
+  	<!-- ************************************************************ -->
+        
+        <div class="col-xs-12">
+             <div  class="panel panel-succes">
+                   <div class="panel-heading bg-info"><h4 class="panel-title glyphicon glyphicon-info-sign">
+                        <a href="#quartPanell1" data-toggle="collapse" data-parent="#desplegable">Examen</a></h4>
+                   </div>
+                        <div id="quartPanell1" class="panel-collapse collapse in">
+                            
+                            <a href="#" id="botonChange" class="btn btn-warning"> change </a> <br>
+                            <a href="#" id="creador" class="btn-primary"> 1000 </a> <br>
+                            <a href="#" id="brujula" class="btn-secundary"> brujula </a>
+                            
+                            
+                            
+                            
+                        </div>
+            </div>
+        </div>
+        
+  	<!-- ************************************************************ -->
+            
+    </div><!-- Final class ROW -->
+</div> <!-- Final Class Container  -->
+        <style type="text/css">
+#screen{ border:1px solid black; width: 20px; height: 20px; }
+
+</style>
+        <!--</div> div del app-->
+        
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+

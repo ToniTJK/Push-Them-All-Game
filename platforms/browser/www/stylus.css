@@ -1,0 +1,17 @@
+
+
+#botonContador{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+
+}
+
+#imgArrow{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    left: 150px;
+    top: 20px;
+}
